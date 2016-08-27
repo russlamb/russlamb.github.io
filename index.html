@@ -2,19 +2,70 @@
 <html ng-app="navbar">
 
   <head>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
     <script data-require="angular.js@1.3.0" data-semver="1.3.0" src="https://code.angularjs.org/1.3.0/angular.js"></script>
     <script data-require="angular-route@1.3.0" data-semver="1.3.0" src="https://code.angularjs.org/1.3.0/angular-route.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="nav.js"></script>
-    <script src="MainController.js"></script>
-    <script src="UserController.js"></script>
-    <script src="RepoController.js"></script>
-    <script src="github.js"></script>
+    <script src="AppController.js"></script>
+
   </head>
 
   <body>
-    <h1>Github Viewer</h1>
-    <div ng-view></div>
+    <h1>Russ Showcase</h1>
+    
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#/about">About</a>
+                </li>
+                <li>
+                    <a href="#/project">Projects</a>
+                </li>
+                <li>
+                    <a href="#/other">Other</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <!--<div id="page-content-wrapper" ng-view>-->
+        <div ng-view>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+  
   </body>
 
 </html>

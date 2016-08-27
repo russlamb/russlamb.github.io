@@ -7,6 +7,7 @@
           .when("/project", {
             templateUrl: "project.html",
             //controller: "ProjectController"
+            controller: "AboutController"
           })
           .when("/about", {
             templateUrl: "about.html",
@@ -15,10 +16,11 @@
           .when("/other", {
             templateUrl: "other.html",
             //controller: "OtherController"
+            controller: "AboutController"
           })
       .otherwise({
         redirectTo: "/about"
       });
     });
-
+  
 }());

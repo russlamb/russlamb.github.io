@@ -1,0 +1,17 @@
+<div>
+  {{ user.name }}
+  <table>
+    <thead>
+      <tr>
+        <th>Contributor</th>
+        <th>Avatar</th>
+      </tr>
+    </thead>
+    <tr ng-repeat="contributor in contributors">
+      <td>{{contributor.login}}</td>
+      <td><img ng-src="{{contributor.avatar_url}}" title="contributor image"/></td>
+    </tr>
+  </table>
+</div>
+
+<a href='{{ "#/user/"+user.login }}'>Back to User</a>

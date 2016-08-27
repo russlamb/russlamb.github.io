@@ -19,7 +19,7 @@
             controller: "AboutController"
           })
           .when("/coffee", {
-            templateUrl: "offee.html",
+            templateUrl: "coffee.html",
             //controller: "OtherController"
             controller: "AboutController"
           })

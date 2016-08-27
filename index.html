@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Russell Lamb</h1>
-<p>Welcome to my page!  It's still under development (literally) so there will be more to come.</p>
-<h2>My Projects</h2>
-<h3><a href="http://russlamb.github.io/GithubBrowser/">Github Browser</a></h3> 
-<p>This is an exercise using angular and the Github API.  Enter a github username to view all the repositories for that user.  Click on a repository to see the contributors for that repository.</p>
-<h2>Other stuff</h2>
-<h3><a href="http://jahbreeze.blogspot.com/2012/11/how-to-tell-if-milk-you-just-put-in.html">How to tell if your milk is bad</a></h3>
-<p>I wrote this a while ago when i started a new job and saved my office from a carton of bad milk.  It got over a thousand page views, which is pretty good since I haven't promoted it, or my blog, at all (*_*).  </p>
-</body>
+<html ng-app="navbar">
+
+  <head>
+    <script data-require="angular.js@1.3.0" data-semver="1.3.0" src="https://code.angularjs.org/1.3.0/angular.js"></script>
+    <script data-require="angular-route@1.3.0" data-semver="1.3.0" src="https://code.angularjs.org/1.3.0/angular-route.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="nav.js"></script>
+    <script src="MainController.js"></script>
+    <script src="UserController.js"></script>
+    <script src="RepoController.js"></script>
+    <script src="github.js"></script>
+  </head>
+
+  <body>
+    <h1>Github Viewer</h1>
+    <div ng-view></div>
+  </body>
+
 </html>

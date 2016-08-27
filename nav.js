@@ -1,0 +1,24 @@
+(function() {
+
+    var app = angular.module("navbar", ["ngRoute"]);
+
+    app.config(function($routeProvider) {
+        $routeProvider
+          .when("/project", {
+            templateUrl: "project.html",
+            //controller: "ProjectController"
+          })
+          .when("/about", {
+            templateUrl: "about.html",
+            controller: "AboutController"
+          })
+          .when("/other", {
+            templateUrl: "other.html",
+            //controller: "OtherController"
+          })
+      .otherwise({
+        redirectTo: "/about"
+      });
+    });
+
+}());

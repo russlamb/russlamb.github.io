@@ -19,6 +19,14 @@
       countdownInterval = $interval(decrementCountdown,1000,$scope.countdown);
     };
     
+    $scope.search = function(username) {
+        
+      if(countdownInterval){
+        $interval.cancel(countdownInterval);
+        $scope.countdown=null;
+      }
+      $location.path("/project")
+    };
     
     $scope.countdown = 10;
     $scope.username = "angular";

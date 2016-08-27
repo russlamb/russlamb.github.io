@@ -23,6 +23,11 @@
             //controller: "OtherController"
             controller: "AboutController"
           })
+          .when("/modem", {
+            templateUrl: "modem.html",
+            //controller: "OtherController"
+            controller: "AboutController"
+          })
       .otherwise({
         redirectTo: "/about"
       });

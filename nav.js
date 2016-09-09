@@ -28,6 +28,11 @@
             //controller: "OtherController"
             controller: "AboutController"
           })
+          .when("/source", {
+            templateUrl: "source.html",
+            //controller: "OtherController"
+            controller: "AboutController"
+          })
       .otherwise({
         redirectTo: "/about"
       });

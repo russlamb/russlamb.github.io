@@ -1,6 +1,6 @@
 (function() {
 
-    var app = angular.module("navbar", ["ngRoute"]);
+    var app = angular.module("navbar");
 
     app.config(function($routeProvider) {
         $routeProvider

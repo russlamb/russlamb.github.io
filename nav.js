@@ -7,31 +7,31 @@
           .when("/project", {
             templateUrl: "project.html",
             //controller: "ProjectController"
-            controller: "AboutController"
+            controller: "MainCtrl"
           })
           .when("/about", {
             templateUrl: "about.html",
-            controller: "AboutController"
+            controller: "MainCtrl"
           })
           .when("/other", {
             templateUrl: "other.html",
             //controller: "OtherController"
-            controller: "AboutController"
+            controller: "MainCtrl"
           })
           .when("/coffee", {
             templateUrl: "coffee.html",
             //controller: "OtherController"
-            controller: "AboutController"
+            controller: "MainCtrl"
           })
           .when("/modem", {
             templateUrl: "modem.html",
             //controller: "OtherController"
-            controller: "AboutController"
+            controller: "MainCtrl"
           })
           .when("/source", {
             templateUrl: "source.html",
             //controller: "OtherController"
-            controller: "AboutController"
+            controller: "MainCtrl"
           })
       .otherwise({
         redirectTo: "/about"

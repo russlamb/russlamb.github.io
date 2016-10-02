@@ -1,18 +1,12 @@
 <div><h2>My Open Source Repositories</h2>
-<h3><a href="https://github.com/russlamb/py-tic-tac-toe">Python Tic Tac Toe</a></h3>
-<p class="note">Note: The above link takes you to the github repository page</p>
-<p>This was a demo application I wrote using python to process user input.</p>
-<p>The program allows the user to play a text-based version of tic-tac-toe.</p>
-<p>I used python 2.7 instead of 3.5 for compatability reasons.</p>
-<p class="tools">Tools Used: Python 2.7</p>
-<h3><a href="https://github.com/russlamb/xl_trim">Excel Trimmer</a></h3>
-<p class="note">Note: The above link takes you to the github repository page</p>
-<p>This was a utility package created with Panda and Python to strip the header rows off Excel (.xls) files.</p>
-<p>I used this as part of an Extract Transform Load project to automate file processing and load into a database.</p>
-<p class="tools">Tools Used: Python 3.5.2, Pandas</p>
-<h3><a href="https://github.com/russlamb/python-filewatch">File Watcher</a></h3>
-<p class="note">Note: The above link takes you to the github repository page</p>
-<p>This is a long running process that watches a directory for any new files.  If it finds one, and it matches a set of patterns, it moves the file to a different directory.</P>
-<p>I'm using this to monitor and organize my downloads.</p>
-<p class="tools">Tools Used: Python 3.5.2, Watchdog</p>
+<div ng-repeat="repo in sidedata.sourceRepos">
+    <h3><a href="{{repo.github}}">{{repo.name}}</a></h3>
+    <p class="note">{{repo.note}}</p>
+    <p>{{repo.description}}</p>
+    <p>The program allows the user to play a text-based version of tic-tac-toe.</p>
+    <p>I used python 2.7 instead of 3.5 for compatability reasons.</p>
+    <p class="tools">Tools Used: Python 2.7</p>
+</div>
+
+
 </div>

@@ -28,7 +28,7 @@
       $location.path("/user/"+username)
     };
     
-    $scope.countdown = 5;
+    $scope.countdown = 60;
     $scope.username = "angular";
     startCountdown();
   };

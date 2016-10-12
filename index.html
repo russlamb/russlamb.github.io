@@ -19,45 +19,10 @@
     <link href="simple-sidebar.css" rel="stylesheet" />
     <!--START Google Analytics -->
     <!--START Official Google Analytics code-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-85571393-1', 'auto');
-      ga('send', 'pageview');
-    
-    </script>
+     <script src="google-official.js" ></script>
     <!--END Official Analytics code-->
     <!--START Custom Google Analytics tracking -->
-    <script>
-            
-      function gaInit() {
-        $.getScript('//www.google-analytics.com/analytics.js'); // jQuery shortcut
-        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
-        ga('create', 'UA-62590784-1', 'auto');
-      
-        console.log("Initalized");
-        return ga;
-      };
-      
-      function gaTrack(path, title) {
-        var track =  { page: path, title: title};
-      
-        ga = window.ga || gaInit();
-      
-        ga('set', track);
-        ga('send', 'pageview');
-      
-        console.log("Tracked");
-      };
-      $("a").click(function(evt) {
-      var path = evt.currentTarget.pathname + evt.currentTarget.hash;
-      var title = evt.currentTarget.title || evt.currentTarget.text;
-      gaTrack(path, title);
-    });
-    </script>
+    <script src="google-custom.js" ></script>
     <!--END Custom Google Analytics tracking -->
     <!--END Google Analytics -->
   </head>

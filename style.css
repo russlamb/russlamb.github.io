@@ -8,3 +8,20 @@
     font-size:x-small;
     color: mediumpurple
 }
+
+table {
+    border-collapse: collapse;
+
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #555555;
+    color: white;
+}

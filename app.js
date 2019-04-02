@@ -23,6 +23,16 @@ app.controller('MainCtrl', function($scope) {
       }
     ],
     sourceRepos:[
+     
+      {
+        name: "Python File Watch",
+        github: "https://github.com/russlamb/python-filewatch",
+        note:"Note: The above link takes you to the github repository page",
+        description: "This project was created to monitor a folder for incoming files and move to another folder",
+        description2:"I used this to help me move organize my personal downloads.  ",
+        description3:"",
+        tools:"Tools Used: Python 3"
+      },
       {
         name: "Python Tic Tac Toe",
         github: "https://github.com/russlamb/py-tic-tac-toe",

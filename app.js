@@ -24,13 +24,24 @@ app.controller('MainCtrl', function($scope) {
     ],
     sourceRepos:[
      
+ 
+      
+      {
+        name: "SSRS File Downloader",
+        github: "https://github.com/russlamb/ssrs-batch",
+        note:"Note: The above link takes you to the github repository page",
+        description: "This project was created to automatically download reports from Microsoft SQL Reporting Services",
+        description2:"This helped me simplify the repetetive task of downloading files from MS SSRS",
+        description3:"It has come in handy many times since writing, so I've included it here.",
+        tools:"Tools Used: Python 3"
+      },
       {
         name: "Python File Watch",
         github: "https://github.com/russlamb/python-filewatch",
         note:"Note: The above link takes you to the github repository page",
         description: "This project was created to monitor a folder for incoming files and move to another folder",
         description2:"I used this to help me move organize my personal downloads.  ",
-        description3:"",
+        description3:"I haven't used it in a while, but someone liked it on github so i've included it here.",
         tools:"Tools Used: Python 3"
       },
       {

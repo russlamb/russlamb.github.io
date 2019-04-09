@@ -24,7 +24,15 @@ app.controller('MainCtrl', function($scope) {
     ],
     sourceRepos:[
      
- 
+        {
+        name: "Gitlab Code runner",
+        github: "https://github.com/russlamb/gitlab_runner",
+        note:"Note: The above link takes you to the github repository page",
+        description: "This project was created to refresh our testing environments after restoring from production",
+        description2:"Our test environment got refreshed from production every day, so this simplified the task of reapplying code changes.",
+        description3:"It drastically reduced the amount of time spent running code scripts for testing",
+        tools:"Tools Used: Python 3"
+      },
        {
         name: "Code Comment counter",
         github: "https://github.com/russlamb/code_comment_counter",

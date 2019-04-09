@@ -25,7 +25,15 @@ app.controller('MainCtrl', function($scope) {
     sourceRepos:[
      
  
-      
+       {
+        name: "Code Comment counter",
+        github: "https://github.com/russlamb/code_comment_counter",
+        note:"Note: The above link takes you to the github repository page",
+        description: "This project was created so I can track the ratio of comments to code written by my team members",
+        description2:"My goal writing it was to see how much F# code was being commented",
+        description3:"It helped me to discover that some developers were not writing comments in their code",
+        tools:"Tools Used: Python 3"
+      },
       {
         name: "SSRS File Downloader",
         github: "https://github.com/russlamb/ssrs-batch",
